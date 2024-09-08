@@ -1,12 +1,10 @@
-# CMake SFML Project Template
+# Pixels and physic
 
-This repository template should allow for a fast and hassle-free kick start of your next SFML project using CMake.
-Thanks to [GitHub's nature of templates](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), you can fork this repository without inheriting its Git history.
+Yes, I'm aware of the typo in the title of the project but whatever !
 
-The template starts out very basic, but might receive additional features over time:
+Special thanks to [Franks laboratory](https://www.youtube.com/@Frankslaboratory) youtube channel who gave me this idea actually. I did first time when I learnt programming in javascript with as expected poor performances ! You can find the link [here](https://aeilxs.github.io/pixels_and_physics/) !
 
-- Basic CMake script to build your project and link SFML on any operating system
-- Basic [GitHub Actions](https://github.com/features/actions) script for all major platforms
+The rest of the README is part of the [SFML Template project](https://github.com/SFML/cmake-sfml-project). Hope it can help you build the app !
 
 ## How to Use
 
@@ -16,6 +14,7 @@ The template starts out very basic, but might receive additional features over t
 1. Open [CMakeLists.txt](CMakeLists.txt). Rename the project and the executable to whatever name you want.
 1. If you want to add or remove any .cpp files, change the source files listed in the [`add_executable`](CMakeLists.txt#L10) call in CMakeLists.txt to match the source files your project requires. If you plan on keeping the default main.cpp file then no changes are required.
 1. If you use Linux, install SFML's dependencies using your system package manager. On Ubuntu and other Debian-based distributions you can use the following commands:
+
     ```
     sudo apt update
     sudo apt install \
@@ -29,6 +28,7 @@ The template starts out very basic, but might receive additional features over t
         libgl1-mesa-dev \
         libegl1-mesa-dev
     ```
+
 1. Configure and build your project. Most popular IDEs support CMake projects with very little effort on your part.
     - [VS Code](https://code.visualstudio.com) via the [CMake extension](https://code.visualstudio.com/docs/cpp/cmake-linux)
     - [Visual Studio](https://docs.microsoft.com/en-us/cpp/build/cmake-projects-in-visual-studio?view=msvc-170)
@@ -42,6 +42,7 @@ The template starts out very basic, but might receive additional features over t
     cmake -B build
     cmake --build build
     ```
+
 1. Enjoy!
 
 ## Upgrading SFML
@@ -56,7 +57,7 @@ If you're feeling adventurous and want to give SFML 3 a try, use the `master` ta
 Beware, this requires changing your code to suit the modified API!
 The nice folks in the [SFML community](https://github.com/SFML/SFML#community) can help you with that transition and the bugs you may encounter along the way.
 
-## But I want to...
+## But I want to
 
 Modify CMake options by adding them as configuration parameters (with a `-D` flag) or by modifying the contents of CMakeCache.txt and rebuilding.
 
