@@ -39,9 +39,11 @@ constexpr i32 targetFPS = 0; // 0 => unlimited
 extern f32 zoom;
 constexpr f32 zoomStep = 0.1f;
 
-constexpr std::array<const char *, 5> imgPaths = {
-    ASSETS_PATH "cpp256.png",     ASSETS_PATH "cpp512.png", ASSETS_PATH "7300_8_05.jpg",
-    ASSETS_PATH "chibi_ashe.png", ASSETS_PATH "boobs.png",
+constexpr std::array<const char *, 4> imgPaths = {
+    ASSETS_PATH "cpp256.png",
+    ASSETS_PATH "cpp512.png",
+    ASSETS_PATH "7300_8_05.jpg",
+    ASSETS_PATH "chibi_ashe.png",
 };
 
 extern u8 idx;

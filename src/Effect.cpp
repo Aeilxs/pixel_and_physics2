@@ -8,7 +8,7 @@
 #include <thread>
 
 ThreadPool pool(12);
-ThreadPool pool(std::thread::hardware_concurrency());
+// ThreadPool pool(std::thread::hardware_concurrency());
 
 Effect::Effect() : particleVertices(sf::Points) {
     if (!loadImage(imgPaths[idx])) {

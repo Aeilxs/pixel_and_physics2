@@ -1,7 +1,7 @@
 #include "ThreadPool.hpp"
 
-ThreadPool::ThreadPool(size_t numThreads) {
-    for (size_t i = 0; i < numThreads; ++i) {
+ThreadPool::ThreadPool(size_t threadCount) {
+    for (size_t i = 0; i < threadCount; ++i) {
         workers.emplace_back([this] {
             while (true) {
                 std::function<void()> task;
@@ -24,6 +24,7 @@ ThreadPool::~ThreadPool() {
         stop = true;
     }
     condition.notify_all();
-    for (std::thread &worker : workers)
+    for (std::thread &worker : workers) {
         worker.join();
+    }
 }
