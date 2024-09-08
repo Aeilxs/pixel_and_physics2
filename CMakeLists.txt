@@ -19,6 +19,7 @@ set(SOURCES
     src/main.cpp
     src/Particle.cpp
     src/Effect.cpp
+    src/ThreadPool.cpp
 )
 
 set(HEADERS
